@@ -36,7 +36,7 @@ function Upload() {
         e.preventDefault();
         // console.log(formData);
         try {
-            const response = await fetch('http://localhost:4080/create', {
+            const response = await fetch('https://shayaranabackend.onrender.com/create', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

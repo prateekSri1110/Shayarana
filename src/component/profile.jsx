@@ -14,7 +14,7 @@ function Profile() {
     const { user, logout, loginWithRedirect, isAuthenticated } = useAuth0();
 
     useEffect(() => {
-        fetch('http://localhost:4080/fetch')
+        fetch('https://shayaranabackend.onrender.com/fetch')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('NO DATA AVAILABLE');

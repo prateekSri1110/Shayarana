@@ -8,7 +8,7 @@ function Api() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:4080/fetch')
+        fetch('https://shayaranabackend.onrender.com/fetch')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('NO DATA AVAILABLE');
